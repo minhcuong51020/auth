@@ -37,7 +37,6 @@ public class UserResourceImpl implements UserResource {
     }
 
     @Override
-    @PostMapping("/register")
     public Response<User> register(RegisterRequest request) {
         return Response.of(this.userService.register(request));
     }
